@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="utf-8">
+		
+		<title>Restaurant Ratings</title>
+		
+        <link href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+		<link href="styles/style.css" rel="stylesheet" type="text/css"></style>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="scripts/script.js"></script>
+    </head>
+    <body>
+        <div id="dark-bg">
+            <div id="popup">
+                <span id="popup-text"></span>
+                <span id="popup-text-big"></span>
+                <button id="popup-close" class="btn">Close</button>
+            </div>
+        </div>
+        <div id="container">
+            <header>
+                <h1>Ratings of Restaurants</h1>
+                <p>This page displays the hygiene ratings of restaurants according to the <a href="https://www.food.gov.uk/">Food Standards Agency</a>.</p>
+                <p>It can also retrieve the customer ratings of the restaurant according to <a href="https://cloud.google.com/maps-platform/places/">Google Places</a>.</p>
+            </header>
+            <form id="search-form" onsubmit="return false;">
+                <input id="search-input" type="text" placeholder="Enter search terms..."/>
+                <input id="search-btn" class="btn" type="submit" value="Search">
+            </form>
+            <div id="pages"></div>
+            <table id="ratings-table">
+                <tr>
+                    <th>Business</th>
+                    <th>Address</th>
+                    <th>Hygiene</th>
+                    <th>Date</th>
+                    <th>Rating</th>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+	font-family: Montserrat, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+#container {
+	width: 70%;
+	margin: 2.5% auto;
+	padding: 1% 2% 2%;
+	background-color: #3a3a3a;
+	border: 1px solid #000;
+	text-align: center;
+}
+
+header, a:visited {
+	color: #f5f5f5;
+}
+
+#search-form {
+	padding: 1% 0;
+}
+
+#search-form input {
+	display: block;
+	margin: 1% auto;
+	padding: 0.5% 0;
+	width: 30%;
+}
+
+#pages {
+	display: flex;
+	margin: 0 auto;
+	width: 80%;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 2% 0;
+}
+
+.page-btn {
+	padding: 0.5%;
+	margin: 0.5%;
+	flex-basis: 7.5%;
+}
+
+#ratings-table {
+	table-layout: fixed;
+	width: 100%;
+	margin: 0 auto;
+	border-collapse: collapse;
+}
+
+.rating-btn {
+	width: 30%;
+	height: 100%;
+	padding: 2% 0;
+	background-color: #373737;
+	color: #f5f5f5;
+}
+
+th, td, #retrieving-data {
+	padding: 0.5%;
+	text-align: center;
+}
+
+th {
+	color: #f5f5f5;
+	background-color: #0086e6;
+}
+
+tr:nth-of-type(even), .page-btn {
+	background-color: #f5f5f5;
+}
+
+tr:nth-of-type(odd) {
+	background-color: #e6e6e6;
+}
+
+#dark-bg {
+	display: none;
+	position: fixed;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+#popup {
+	position: fixed;
+	top: 25%; left: 0; right: 0;
+	margin: 0 auto;
+	padding: 0 1%;
+	width: 25%;
+	text-align: center;
+	background-color: #f5f5f5;
+	box-shadow: 1px 1px 4px;
+}
+
+#popup-text, #popup-text-big, #popup-close {
+	display: block;
+	margin: 5% auto;
+}
+
+#popup-text {
+	font-size: 110%;
+}
+
+#popup-text-big {
+	font-size: 150%;
+	font-weight: bold;
+}
+
+#popup-close {
+	width: 50%;
+	font-size: 110%;
+	padding: 1% 0;
+	background-color: #373737;
+	color: #f5f5f5;
+}
+
+.btn {
+	border: none;
+	cursor: pointer;
+	font-weight: bold;
+	transition: background-color 0.15s;
+}
+
+.btn:not(:focus):hover {
+	background-color: #80bfe6 !important;
+}
+
+.btn:focus, .current-page {
+	background-color: #0086e6 !important;
+}
